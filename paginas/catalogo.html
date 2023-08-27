@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Navegación</title>
+
+    <!--Aqui comienza el seo de nuestro catalogo-->
+
+    <title>La Masia - Catalogo</title>
+
+    <meta name="description" content="Explora el delicioso catálogo de La Masia y descubre una amplia variedad de hamburguesas dobles, royales y platillos gourmet. Nuestro menú refleja nuestra pasión por los sabores auténticos y la calidad culinaria. Sumérgete en una experiencia gastronómica inigualable.">
+
+    <meta name="keywords" content="Catálogo de La Masia, Nuestro Menú, Variedad culinaria, Hamburguesas dobles menú, Platillos royales, Experiencia gastronómica, Sabores auténticos, Hamburguesas gourmet, Elección de platillos, Opciones del menú, Menú culinario, Especialidades de La Masia, Explorar platillos, Amplia selección de sabores, Comida rápida de calidad menú, Variedad de opciones, Menú de calidad, Sabores inigualables, Platos exclusivos, Pasión culinaria en el menú">
+
+    <!--Aqui termina el seo de nuestro catalogo-->
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
+    <link rel="shortcut icon" href="../imagenes/hamburguesa-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="../imagenes/hamburguesa-logo.webp" alt="Logo de la marca">
+            <a href="../index.html"><img src="../imagenes/hamburguesa-logo.webp" alt="Logo de la marca"></a>
         </div>
         <nav>
            <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="../paginas/informacion.html">Nosotros</a></li>
             <li><a href="../paginas/catalogo.html">Catalogo</a></li>
-            <li><a href="../paginas/inicio.html">Login</a></li>
+            <li><a href="../paginas/login.html">Login</a></li>
            </ul>            
         </nav>
         <a class="btn" href="../paginas/contacto.html"><button>Contact</button></a>
@@ -31,7 +45,7 @@
     <br><br>
     <center><h2 style="color: orange;"><strong>HAMBURGUESAS DOBLE CARNE</strong></h2></center>
     <div class="conteinerhamburguesas">
-        <div class="parent2">
+        <div class="parent2" data-aos="zoom-in-up">
             <div class="div4">
                 <img src="../imagenes/hamburguesa1.jpg" alt="hamburguesa 1">
             </div>
@@ -48,7 +62,7 @@
         </div>
         <br><hr style="color: rgb(255, 175, 28);"><br>
         <center><h2 style="color: orange;"><strong>HAMBURGUESAS DOBLE QUESO</strong></h2></center>
-        <div class="conteinerhamburguesas">
+        <div class="conteinerhamburguesas" data-aos="zoom-in-up">
             <div class="parent2">
                 <div class="div4">
                     <img src="../imagenes/hamburguesa1.jpg" alt="hamburguesa 1">
@@ -66,7 +80,7 @@
             </div>
             <br><hr style="color: rgb(255, 177, 31);"><br>
             <center><h2 style="color: orange;"><strong>HAMBURGUESAS ROYALE</strong></h2></center>
-        <div class="conteinerhamburguesas">
+        <div class="conteinerhamburguesas" data-aos="zoom-in-up">
             <div class="parent2">
                 <div class="div4">
                     <img src="../imagenes/hamburguesa1.jpg" alt="hamburguesa 1">
@@ -98,5 +112,11 @@
                     <p>copyrigth &copy;2020 codeOpacity. designed by Iñaki Trapiella <span></span></p>
                 </div>
                 </footer>
+
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+                <script>
+                    AOS.init();
+                  </script>
 </body>
 </html>

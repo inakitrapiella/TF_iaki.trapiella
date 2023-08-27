@@ -1,0 +1,41 @@
+// Media queries for responsiveness
+@media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+        "item1"
+        "item2"
+        "item3";
+    }
+
+    .grid__item1, .grid__item2, .grid__item3 {
+      height: 200px;
+    }
+
+    .titles {
+      padding-inline: 1rem;
+    }
+
+    .cards {
+      justify-content: flex-start;
+    }
+
+    .card {
+      flex-basis: calc(50% - 1rem);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .grid__item1, .grid__item2, .grid__item3 {
+      height: 150px;
+    }
+
+    .titles {
+      padding-inline: 0;
+    }
+
+    .card {
+      flex-basis: 100%;
+    }
+  }

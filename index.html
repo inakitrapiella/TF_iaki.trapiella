@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Navegación</title>
+
+    <!--Seo de la pagina de inicio-->
+
+    <title>Hamburgueseria la Masia - inicio</title>
+
+    <meta name="description" content="Deliciosas hamburguesas dobles y platillos de calidad en La Masia - Tu destino de sabor en Argentina. Descubre las favoritas de la semana y las mejor puntuadas por nuestros clientes. Iñaki Trapiella te invita a saborear la auténtica experiencia de hamburguesas royales y comida rápida gourmet. ¡Visítanos ahora!">
+
+    <meta name="keywords" content="Hamburguesas dobles, Hamburguesas de doble carne, Hamburguesas royal, Comida rápida gourmet, La Masia restaurante, Iñaki Trapiella, Sabor auténtico, Delicias gastronómicas, Mejores hamburguesas Argentina, Hamburguesas más vendidas, Platos destacados, Experiencia culinaria, Restaurante La Masia, Comida rápida de calidad, Sabores irresistibles, Menú variado, Calidad gastronómica, Exquisitas hamburguesas, Satisfacción del cliente, Destino culinario Argentina">
+
+    <!--Aqui termina el Seo-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="shortcut icon" href="./imagenes/hamburguesa-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -17,9 +28,10 @@
         </div>
         <nav>
            <ul class="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
             <li><a href="./paginas/informacion.html">Nosotros</a></li>
             <li><a href="./paginas/catalogo.html">Catalogo</a></li>
-            <li><a href="./paginas/inicio.html">Login</a></li>
+            <li><a href="./paginas/login.html">Login</a></li>
            </ul>            
         </nav>
         <a class="btn" href="./paginas/contacto.html"><button>Contact</button></a>
@@ -57,54 +69,36 @@
         </section class="plano2">
             <div class="containerhamburguesas">
             <div class="parent2">
-                <div class="div4">
+                <div class="div4" data-aos="fade-down-right">
                     <img src="./imagenes/hamburguesa1.jpg" alt="hamburguesa 1">
                 </div>
-                <div class="div5">
+                <div class="div5" data-aos="flip-left">
                     <img src="./imagenes/hamburguesa2.jpeg" alt="hamburguesa 2"> 
                 </div>
-                <div class="div6">
+                <div class="div6" data-aos="flip-right">
                     <img src="./imagenes/hamburguesa3.jpg" alt="hamburguesa 3">
-                </div>
-                <div class="div7">
-                    <img src="./imagenes/hamburguesa 4.jpg" alt="hamburguesa 4">
                 </div>
                 </div>
             </div>
-            <section class="grid-popular">
-                <div class="grid__item grid__item1">
-                    <h5>Especial del dia</h5>
-                    <h4>Choripan acompañado de chimichurri y cebolla</h4>
-                </div>
-                <div class="grid__item grid__item2">
-                    <h5>Nuevo ingreso</h5>
-                    <h4>Papas fritas<br>Mas crocantes</h4>
-                </div>
-                <div class="grid__item grid__item3">
-                    <h5>Mas vendido</h5>
-                    <h4>Papas cheddart con panceta</h4>
-                </div>
-            </section>
-        
             <section class="enjoy">
                 <div class="titles">
                     <h2>Disfruta de nuestras mejores hamburguesas</h2>
                     <p>¡Estas son nuestras 3 hamburguesas más vendidas, no te quedes con las ganas y aprovecha en comprar todas las que quieras!</p>
                 </div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-up">
                         <img src="./imagenes/enjoy1.png" alt="Burger 1">
                         <h4>Hamburguesa Triple</h4>
                         <p>Hamburguesa con 3 medallones de carne, panceta, salsa especial acompañada de una guarnicion de papas.</p>
                         <a href="#">COMPRAR</a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-up">
                         <img src="./imagenes/enjoy2.png" alt="Burger 2">
-                        <h4>Hamburguesa Caramelizada</h4>
+                        <h4>Hamburguesa Caramel</h4>
                         <p>Hamburguesa simple medallon de carne con cebolla caramelizada y pepinillos.</p>
                         <a href="#">COMPRAR</a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-up">
                         <img src="./imagenes/enjoy3.png" alt="Burger 3">
                         <h4>Hamburguesa Doble</h4>
                         <p>Hamburguesa con dos medallores de carne, panceta, salsa especial acompañada de una guarnicion de papas.</p>
@@ -131,6 +125,12 @@
         <p>copyrigth &copy;2020 codeOpacity. designed by Iñaki Trapiella <span></span></p>
     </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
